@@ -8,6 +8,8 @@ const Header = () => {
       <nav className="flex justify-center gap-4 text-lg font-semibold text-gray-600">
         <Link to="/">Home</Link>
         <Link to="/About">About</Link>
+        <Link to="/Users">Users</Link>
+        
         <Link to="/Contact">Contact</Link>
       </nav>
     </div>
