@@ -1,16 +1,12 @@
-import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
-      <Header></Header>
-      <div className="border-2 border-dotted border-blue-600 rounded mt-10 bg-yellow-400">
-        <h1 className="text-2xl font-bold underline  py-8 ">
-          This is Home page
-        </h1>
-      </div>
-      <Outlet></Outlet>
+      <Header />
+      <h1 className="text-center text-3xl font-bold my-4">Welcome to Home</h1>
+      <Outlet /> {/* ✅ Renders child routes like About, Users, etc. */}
     </div>
   );
 };
